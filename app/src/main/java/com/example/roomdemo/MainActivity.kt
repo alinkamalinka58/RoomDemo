@@ -19,21 +19,20 @@ class MainActivity : ComponentActivity() {
         setContent {
             RoomDemoTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Greeting(
-                        name = "Android",
-                        modifier = Modifier.padding(innerPadding)
-                    )
+                    ScreenSetup(modifier = Modifier.padding(innerPadding))
                 }
             }
         }
     }
 }
+@Composable
+fun ScreenSetup(modifier: Modifier = Modifier) {
+    MainScreen(modifier)
+}
 
 @Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
+fun MainScreen(modifier: Modifier = Modifier) {
+    // Пока пусто, заполним позже
 }
+
 
