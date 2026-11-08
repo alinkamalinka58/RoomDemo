@@ -6,12 +6,14 @@ plugins {
 
 android {
     namespace = "com.example.roomdemo"
-    compileSdk = 35
+    compileSdk {
+        version = release(37)
+    }
 
     defaultConfig {
         applicationId = "com.example.roomdemo"
         minSdk = 27
-        targetSdk = 35
+        targetSdk = 37
         versionCode = 1
         versionName = "1.0"
 
